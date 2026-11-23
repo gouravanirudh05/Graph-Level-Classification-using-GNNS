@@ -114,14 +114,3 @@ Runtime on a T4: 42–101 minutes for PROTEINS, 75–170 minutes for UPFD, and 5
 - **PROTEINS has only 112 test graphs,** so one graph is worth 0.9 accuracy points. Differences under about 2 points are within seed noise. Best validation accuracy overstates test accuracy by 4–7 points.
 - **The search keeps the tricks on and does not toggle them.** On PROTEINS, the ablations show that BatchNorm and the FFN hurt GIN⁺, so a search over the switches could do better.
 
-## References
-
-- Luo, Shi, Wu. *Can Classic GNNs Be Strong Baselines for Graph-level Tasks?* ICML 2025.
-- Kipf, Welling. *Semi-Supervised Classification with Graph Convolutional Networks.* ICLR 2017.
-- Xu, Hu, Leskovec, Jegelka. *How Powerful are Graph Neural Networks?* ICLR 2019.
-- Rampášek et al. *Recipe for a General, Powerful, Scalable Graph Transformer.* NeurIPS 2022.
-- Dou et al. *User Preference-aware Fake News Detection.* SIGIR 2021 (UPFD).
-- Borgwardt et al. *Protein Function Prediction via Graph Kernels.* Bioinformatics 2005 (PROTEINS).
-- Orsini, Frasconi, De Raedt. *Graph Invariant Kernels.* IJCAI 2015 (FRANKENSTEIN).
-- Ying et al. *GNNExplainer: Generating Explanations for Graph Neural Networks.* NeurIPS 2019.
-- Lee, Lee, Kang. *Self-Attention Graph Pooling.* ICML 2019 · Ying et al. *DiffPool.* NeurIPS 2018 · Bianchi et al. *MinCutPool.* ICML 2020.
